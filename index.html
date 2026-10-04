@@ -17,9 +17,8 @@
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
         header { background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
-        .logo { font-size: 1.8rem; font-weight: bold; color: var(--primary-green); }
-        .logo span { color: var(--accent-gold); }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 2rem; }
+        .logo img { height: 65px; width: auto; object-fit: contain; }
         .nav-links { display: flex; gap: 2rem; align-items: center; }
         .btn-cta { background-color: var(--primary-green); color: white; padding: 0.6rem 1.2rem; border-radius: 50px; font-weight: bold; }
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
@@ -48,13 +47,14 @@
             .nav-links.active { display: flex; }
             .menu-toggle { display: block; }
             .about-grid, .contact-container { grid-template-columns: 1fr; }
+            .logo img { height: 50px; }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Eko<span>Pat</span></div>
+            <div class="logo"><a href="#inicio"><img src="logo.png" alt="EkoPat - Reciclaje de Aceite"></a></div>
             <div class="menu-toggle" id="mobile-menu">☰</div>
             <ul class="nav-links" id="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
@@ -72,24 +72,13 @@
             <a href="https://wa.me/56977969866?text=Hola%20EkoPat!%20Quiero%20reciclar%20mi%20aceite%20usado" target="_blank" class="btn-cta">Háblanos por WhatsApp</a>
         </div>
     </section>
-
     <section id="nosotros">
-        <div class="section-title">
-            <h2>Nuestra Misión</h2>
-            <p>El reciclaje no es solo un proceso técnico, es el soporte de una nueva forma de vivir.</p>
-        </div>
+        <div class="section-title"><h2>Nuestra Misión</h2><p>El reciclaje no es solo un proceso técnico, es el soporte de una nueva forma de vivir.</p></div>
         <div class="about-grid">
-            <div>
-                <h3>Civilización y Naturaleza en Equilibrio</h3>
-                <p>En <strong>EkoPat</strong>, cada litro de aceite que reciclamos evita que miles de litros de agua se contaminen y se transforma en energía limpia.</p>
-                <p>Trabajamos con restaurantes, industrias y comunidades para cerrar el ciclo de vida del aceite, devolviéndole valor y protegiendo nuestros recursos hídricos y suelos.</p>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bosque y naturaleza - EkoPat">
-            </div>
+            <div><h3>Civilización y Naturaleza en Equilibrio</h3><p>En <strong>EkoPat</strong>, cada litro de aceite que reciclamos evita que miles de litros de agua se contaminen y se transforma en energía limpia.</p><p>Trabajamos con restaurantes, industrias y comunidades para cerrar el ciclo de vida del aceite, devolviéndole valor y protegiendo nuestros recursos hídricos y suelos.</p></div>
+            <div class="about-image"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bosque y naturaleza - EkoPat"></div>
         </div>
     </section>
-
     <section id="proceso" class="process">
         <div class="section-title"><h2>El Ciclo EkoPat</h2><p>Un proceso simple que genera un impacto gigante.</p></div>
         <div class="process-steps">
@@ -99,7 +88,6 @@
             <div class="step"><div class="step-icon">🌍</div><h4>4. Impacto</h4><p>Economía circular real.</p></div>
         </div>
     </section>
-
     <section id="impacto">
         <div class="section-title"><h2>Nuestro Impacto Real</h2></div>
         <div class="impact-stats">
@@ -108,28 +96,14 @@
             <div><div class="stat-number">0</div><div>Residuos en vertederos</div></div>
         </div>
     </section>
-
     <section id="contacto">
         <div class="section-title"><h2>Trabajemos Juntos</h2><p>Respuesta rápida por WhatsApp</p></div>
         <div class="contact-container">
-            <div>
-                <h3>Información de Contacto</h3>
-                <p><strong>Ubicación:</strong> Chile (RM y alrededores)</p>
-                <p><strong>Email:</strong> reciclajeekopat@gmail.com</p>
-                <p><strong>WhatsApp:</strong> +56 9 7796 9866</p>
-                <a class="btn-whatsapp" href="https://wa.me/56977969866?text=Hola%20EkoPat!%20Quiero%20cotizar%20retiro%20de%20aceite" target="_blank">💬 Abrir WhatsApp</a>
-            </div>
-            <form id="waForm">
-                <input type="text" id="nombre" placeholder="Tu Nombre" required>
-                <select id="tipo"><option value="">Soy:</option><option value="Empresa">Empresa / Restaurante</option><option value="Particular">Particular</option></select>
-                <textarea id="mensaje" rows="5" placeholder="¿Cuánto aceite tienes? ¿Dónde?" required></textarea>
-                <button type="submit">Enviar por WhatsApp</button>
-            </form>
+            <div><h3>Información de Contacto</h3><p><strong>Ubicación:</strong> Chile (RM y alrededores)</p><p><strong>Email:</strong> reciclajeekopat@gmail.com</p><p><strong>WhatsApp:</strong> +56 9 7796 9866</p><a class="btn-whatsapp" href="https://wa.me/56977969866?text=Hola%20EkoPat!%20Quiero%20cotizar%20retiro%20de%20aceite" target="_blank">💬 Abrir WhatsApp</a></div>
+            <form id="waForm"><input type="text" id="nombre" placeholder="Tu Nombre" required><select id="tipo"><option value="">Soy:</option><option value="Empresa">Empresa / Restaurante</option><option value="Particular">Particular</option></select><textarea id="mensaje" rows="5" placeholder="¿Cuánto aceite tienes? ¿Dónde?" required></textarea><button type="submit">Enviar por WhatsApp</button></form>
         </div>
     </section>
-
     <footer><p>&copy; 2026 EkoPat. Avanzando con la naturaleza.</p></footer>
-
     <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navList = document.getElementById('nav-list');
