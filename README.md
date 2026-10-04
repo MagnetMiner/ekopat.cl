@@ -43,9 +43,5 @@ Secciones:
 ### Como funciona el contacto?
 El formulario no usa backend. Al enviar, abre WhatsApp directo al +56 9 7796 9866 con el mensaje pre-escrito. Usa wa.me
 
-### TODO
-- [ ] Cambiar imagen de Unsplash por fotos reales
-- [ ] Agregar favicon
-- [ ] SEO basico (description, Open Graph)
 
 © 2026 EkoPat. Avanzando con la naturaleza.
